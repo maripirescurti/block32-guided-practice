@@ -85,9 +85,9 @@ const init = async () => {
   await client.query(SQL);
   console.log('tables created');
   SQL = `
-    INSERT INTO notes(txt, ranking) VALUES('learn express', 5)
-    INSERT INTO notes(txt, ranking) VALUES('write SQL queries', 4)
-    INSERT INTO notes(txt, ranking) VALUES('create routes', 2)
+    INSERT INTO notes(txt, ranking) VALUES('learn express', 5);
+    INSERT INTO notes(txt, ranking) VALUES('write SQL queries', 4);
+    INSERT INTO notes(txt, ranking) VALUES('create routes', 2);
   `;
   await client.query(SQL);
   console.log('data seeded');
